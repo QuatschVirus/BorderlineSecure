@@ -1,0 +1,51 @@
+{
+	"general_prompts": {
+		"username": "Username:",
+		"password": "Password:",
+		"pin": "PIN:",
+		"command": ">"
+	},
+	"startup": {
+		"booting": [
+			"Initializing Virtual Machine",
+			"Checking components",
+			"CPU ($cpu;) ok",
+			"Memory ($mem;) ok",
+            "Disks ok",
+			"GPU ok",
+			"Fans ok",
+			"Booting"
+		],
+		"connecting": [
+			"Initializing OpV VPN service",
+			"[OpV] searching for OPSEC link",
+			"[OpV] OPSEC link found on port $p, please enter your OPSEC access PIN",
+			["[OpV] Incorrect PIN, please try again", "[OpV] PIN correct"],
+			"[OpV] Connecting to OPSEC...",
+			"[OpV] OPSEC link established",
+			"[OpV] Pinging VPN target",
+			"[OpV] Target responded, establishing tunnel to opsec://gov.io.bls",
+			"[OpV] Tunnel requires verification, please enter your credentials",
+			["[OpV] Incorrect credentials, please try again", "[OpV] Credentials correct"],
+			"[OpV] Tunnel established, switching console provider"
+		]
+	},
+	"bls": {
+		"welcome": "Welcome!\nMake sure you are alone.\nYou have been assigned kiosk $kid; today.",
+		"messages": "You have $count unread messages",
+		"duty_start": "Starting duty. Good luck!",
+		"reconnecting": [
+			"[OpV] Redirecting to opsec://gov.io.bls",
+			"[OpV] Verification passed",
+			"[OpV] Redirect successful, switching console provider"
+		]
+	},
+	"borderkiosk": {
+		"connecting": [
+			"[OpV] Redirecting to opsec://gov.io.bls.bk:$kid;",
+			"[OpV] Verification passed",
+            "[OpV] Redirect successful, switching console provider"
+		],
+		"login": "You are logged into kiosk $kid;.\nStatus: $stat;"
+	}
+}
